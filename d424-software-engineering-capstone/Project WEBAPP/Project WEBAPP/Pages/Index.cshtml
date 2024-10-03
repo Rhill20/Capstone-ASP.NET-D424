@@ -1,0 +1,32 @@
+﻿@page
+@model Project_WEBAPP.Pages.IndexModel
+
+<h2>Clock In/Out</h2>
+
+<form method="post" class="mb-4">>
+    <div class="form-group">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId" name="EmployeeId" value="@Model.EmployeeId" required class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Check Status</button>
+</form>
+
+@if (Model.Message != null)
+{
+    <p class="text-info">@Model.Message</p>
+}
+
+@if (Model.EmployeeExists)
+{
+    <div class="mt-4">
+        <form method="post" asp-page-handler="ClockIn" class="mb-2">
+            <input type="hidden" name="EmployeeId" value="@Model.EmployeeId" />
+            <button type="submit" class="btn btn-success" name="action" value="ClockIn" @(Model.RecentLog != null && Model.RecentLog.ClockOutTime == null ? "disabled" : "")>Clock In</button>
+        </form>
+
+        <form method="post" asp-page-handler="ClockOut">
+            <input type="hidden" name="EmployeeId" value="@Model.EmployeeId" />
+            <button type="submit" class="btn btn-danger" name="action" value="ClockOut" @(Model.RecentLog == null || Model.RecentLog.ClockOutTime != null ? "disabled" : "")>Clock Out</button>
+        </form>
+    </div>
+}

@@ -1,0 +1,57 @@
+﻿@page
+@model Project_WEBAPP.Pages.ReportsModel
+
+<h2>Generate Employee Reports</h2>
+
+<!-- Section 1: Total Hours Worked Report -->
+<section>
+    <h3>Total Hours Worked for All Employees</h3>
+    <form method="post" asp-page-handler="GenerateTotalHoursReport">
+        <div class="form-group">
+            <label>Select Month</label>
+            <input type="month" name="StartMonth" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Run Total Hours Report</button>
+    </form>
+</section>
+
+<!-- Section 2: Individual Monthly Hours Report -->
+<section>
+    <h3>Individual Monthly Hours Worked</h3>
+    <form method="post" asp-page-handler="GenerateIndividualMonthlyReport">
+        <div class="form-group">
+            <label>Select Employee</label>
+            <select name="EmployeeId" class="form-control" required>
+                <option value="">-- Select Employee --</option> <!-- Default blank option -->
+                @foreach (var employee in Model.EmployeeList)
+                {
+                    <option value="@employee.EmployeeId">@employee.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Select Month</label>
+            <input type="month" name="StartMonth" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Run Individual Hours Report</button>
+    </form>
+</section>
+
+<!-- Section 3: 40-Hour Check for All Employees -->
+<section>
+    <h3>40-Hour Check for All Employees</h3>
+    <form method="post" asp-page-handler="Generate40HourCheckReport">
+        <div class="form-group">
+            <label>Select Month</label>
+            <input type="month" name="StartMonth" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Run 40-Hour Check Report</button>
+    </form>
+</section>
+
+<!-- Display Report Result -->
+@if (!string.IsNullOrEmpty(Model.ReportResult))
+{
+    <h3>Report Result</h3>
+    <pre>@Model.ReportResult</pre>
+}

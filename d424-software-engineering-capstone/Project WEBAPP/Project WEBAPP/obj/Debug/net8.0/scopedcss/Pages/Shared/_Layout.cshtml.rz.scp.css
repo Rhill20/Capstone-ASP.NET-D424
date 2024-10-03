@@ -1,0 +1,125 @@
+
+
+body[b-xkke4moq64] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+a[b-xkke4moq64] {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+    a:hover[b-xkke4moq64] {
+        color: #357ABD;
+        text-decoration: underline;
+    }
+
+/* Rounded corners and modern buttons */
+.btn-primary[b-xkke4moq64] {
+    background-color: #4a90e2;
+    border-color: #357ABD;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Subtle hover animation */
+}
+
+    .btn-primary:hover[b-xkke4moq64] {
+        background-color: #357ABD;
+        border-color: #2a6396;
+    }
+
+/* Navbar */
+.navbar[b-xkke4moq64] {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 10px;
+}
+
+.navbar-brand[b-xkke4moq64] {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a90e2;
+}
+
+.navbar-nav .nav-link[b-xkke4moq64] {
+    color: #4a90e2;
+    font-weight: 500;
+}
+
+    .navbar-nav .nav-link:hover[b-xkke4moq64] {
+        color: #357ABD;
+    }
+
+/* Footer */
+.footer[b-xkke4moq64] {
+    background-color: #f4f4f4;
+    border-top: 1px solid #d1d1d1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Subtle box shadows for modern effect */
+.box-shadow[b-xkke4moq64] {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Border styles for modern look */
+.border-top[b-xkke4moq64] {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-xkke4moq64] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Hover animation for links */
+.nav-link[b-xkke4moq64] {
+    transition: color 0.3s ease;
+}
+
+/* Forms */
+form input[b-xkke4moq64], form select[b-xkke4moq64], form textarea[b-xkke4moq64] {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+    form input:focus[b-xkke4moq64], form select:focus[b-xkke4moq64], form textarea:focus[b-xkke4moq64] {
+        border-color: #4a90e2;
+        box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+    }
+
+/* Subtle animations for input focus */
+input[b-xkke4moq64], button[b-xkke4moq64] {
+    transition: all 0.3s ease;
+}
+
+    button:hover[b-xkke4moq64] {
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar[b-xkke4moq64] {
+        padding: 5px;
+    }
+
+    .navbar-brand[b-xkke4moq64] {
+        font-size: 1.2rem;
+    }
+
+    .footer[b-xkke4moq64] {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .btn-primary[b-xkke4moq64] {
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,125 @@
+﻿
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #357ABD;
+        text-decoration: underline;
+    }
+
+/* Rounded corners and modern buttons */
+.btn-primary {
+    background-color: #4a90e2;
+    border-color: #357ABD;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Subtle hover animation */
+}
+
+    .btn-primary:hover {
+        background-color: #357ABD;
+        border-color: #2a6396;
+    }
+
+/* Navbar */
+.navbar {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a90e2;
+}
+
+.navbar-nav .nav-link {
+    color: #4a90e2;
+    font-weight: 500;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #357ABD;
+    }
+
+/* Footer */
+.footer {
+    background-color: #f4f4f4;
+    border-top: 1px solid #d1d1d1;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Subtle box shadows for modern effect */
+.box-shadow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Border styles for modern look */
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Hover animation for links */
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+/* Forms */
+form input, form select, form textarea {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+    form input:focus, form select:focus, form textarea:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+    }
+
+/* Subtle animations for input focus */
+input, button {
+    transition: all 0.3s ease;
+}
+
+    button:hover {
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
+}
